@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$PATH" | tr ':' '\n' | grep -c .
+OLD_IFS=$IFS; IFS=':'; set -- $PATH; IFS=$OLD_IFS; echo $#
