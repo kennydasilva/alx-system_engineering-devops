@@ -1,2 +1,2 @@
 #!/bin/bash
-IFS=':' read -ra DIRS <<< "$PATH"; echo "${#DIRS[@]}"
+OLD_IFS=$IFS; IFS=':'; set -- $PATH; IFS=$OLD_IFS; echo $#
