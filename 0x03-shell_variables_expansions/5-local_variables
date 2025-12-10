@@ -1,0 +1,18 @@
+#!/bin/bash
+# Lists all local variables, environment variables, and functions
+
+# List all local variables
+echo "Local variables:"
+declare
+
+echo ""
+
+# List all environment variables
+echo "Environment variables:"
+printenv
+
+echo ""
+
+# List all functions
+echo "Functions:"
+declare -f
