@@ -1,2 +1,3 @@
 #!/bin/bash
-printf '%s\n' "$PATH" | tr ':' '\n' | wc -l
+printf '%s' "$PATH" | tr ':' '\n' | nl -ba -w3 -s' | ' -v1
+
