@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%s' "$PATH" | xxd -g1 -c32
+tr -dc ':' <<< "$PATH" | wc -c | awk '{print $1+1}'
