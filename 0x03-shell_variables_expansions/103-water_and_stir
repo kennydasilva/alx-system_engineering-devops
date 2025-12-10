@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c 'import os;import functools as f;A="water";B="stir";C="bestchol";g=lambda s,a:f.reduce(lambda x,ch:x*len(a)+a.index(ch),[c for c in s if c in a],0);n=g(os.getenv("WATER",""),A)+g(os.getenv("STIR",""),B);h=lambda x:(x==0)and C[0]or h(x//len(C))+C[x%len(C)];print(h(n))'
+python3 -c $'import os,functools as f\nW=os.getenv(\"WATER\",\"\")\nS=os.getenv(\"STIR\",\"\")\nA=\"water\"\nB=\"stir\"\nC=\"bestchol\"\nconv=lambda s,a:f.reduce(lambda x,ch:x*len(a)+a.index(ch),[ch for ch in s if ch in a],0)\nn=conv(W,A)+conv(S,B)\nL=len(C)\nout=\"\"\nwhile n>0:\n n,r=divmod(n,L)\n out=C[r]+out\nprint(out or C[0])'
