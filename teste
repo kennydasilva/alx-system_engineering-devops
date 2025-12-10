@@ -1,0 +1,39 @@
+deu mesmo erro no cheker mas o autput e este teste 1 #!/bin/bash
+printf '%s' "$PATH" | tr ':' '\n' | nl -ba -w3 -s' | ' -v1        saiu :    kenny-dasilva@kenny-dasilva-Latitude-E7470:~/Documentos/ALX/AIRBNB/alx-system_engineering-devops/0x03-shell_variables_expansions$ . ./3-paths
+  1 | /home/kenny-dasilva/.nvm/versions/node/v22.16.0/bin
+  2 | /usr/lib/jvm/java-1.17.0-openjdk-amd64/bin
+  3 | /home/kenny-dasilva/flutter/bin/cache/dart-sdk/bin/
+  4 | /home/kenny-dasilva/.local/bin
+  5 | /usr/local/sbin
+  6 | /usr/local/bin
+  7 | /usr/sbin
+  8 | /usr/bin
+  9 | /sbin
+ 10 | /bin
+ 11 | /usr/games
+ 12 | /usr/local/games
+ 13 | /snap/bin
+ 14 | /snap/bin
+ 15 | /home/kenny-dasilva/.dotnet/tools
+ 16 | /home/kenny-dasilva/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts
+ 17 | /home/kenny-dasilva/.config/Code/User/globalStorage/github.copilot-chat/debugCommand
+ 18 | /opt/flutter/bin
+ 19 | /home/kenny-dasilva/.pub-cache/bin
+kenny-dasilva@kenny-dasilva-Latitude-E7470:~/Documentos/ALX/AIRBNB/alx-system_engineering-devops/0x03-shell_variables_expansions$ PATH=/bin::::/home:/usr:::::/home/me . ./3-paths
+  1 | /bin
+  2 | 
+  3 | 
+  4 | 
+  5 | /home
+  6 | /usr
+  7 | 
+  8 | 
+  9 | 
+ 10 | 
+ 11 | /home/me
+kenny-dasilva@kenny-dasilva-Latitude-E7470:~/Documentos/ALX/AIRBNB/alx-system_engineering-devops/0x03-shell_variables_expansions$ 
+
+
+
+teste 2
+  saiu : 
