@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%s\n' "$PATH" | tr ':' '\n' | grep -v '^$' | wc -l
+printf '%s\n' "$PATH" | sed 's/^$/./' | sort -u | wc -l
