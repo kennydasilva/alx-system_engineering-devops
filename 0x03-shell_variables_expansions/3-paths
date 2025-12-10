@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%s\n' "$PATH" | tr ':' '\n' | while read -r p; do [ -z "$p" ] && p='.'; [ -d "$p" ] && printf '%s\n' "$p"; done | wc -l
+printf '%s\n' "$PATH" | tr ':' '\n' | grep -v '^$' | wc -l
